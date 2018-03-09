@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.min.js"></script>
+    <script src="scripts/cell.js"></script>
+    <script src="scripts/main.js"></script>
+    <title>Buscaminas</title>
+    <style>
+      .app-title {
+        text-align: center;
+      }
+
+      #game-board canvas {
+        display: block;
+        margin: 0 auto;
+      }
+      
+      .game-options {
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      .reload-game {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+  <h1 class="app-title">Buscaminas</h1>
+  <div id="game-board"></div>
+  <div class="game-options">
+      <button class="reload-game" onclick="startGame()">Recargar</button>
+  </div>
+</body>
+</html>
